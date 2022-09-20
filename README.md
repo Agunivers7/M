@@ -13,7 +13,7 @@
 </p>  
 
 ## Deployment Methods
-
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/i0y1Uc?referralCode=a7Xv1u)
 ### Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Agunivers7/MediaToTelegraphLink-TeLeTiPs)
