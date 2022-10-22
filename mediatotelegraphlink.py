@@ -1,11 +1,9 @@
-#Copyright ©️ 2022 TeLe TiPs. All Rights Reserved
-#You are free to use this code in any of your project, but you MUST include the following in your README.md (Copy & paste)
-# ##Credits - [MediaToTelegraphLink bot by TeLe TiPs] (https://github.com/teletips/MediaToTelegraphLink-TeLeTiPs)
+from config import API_ID, API_HASH, BOT_TOKEN
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from telegraph import upload_file
-import os
+
 
 teletips=Client(
     "MediaToTelegraphLink",
