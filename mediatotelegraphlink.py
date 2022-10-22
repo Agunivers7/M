@@ -29,6 +29,23 @@ To generate links in **group chats**, add me to your supergroup and send the com
     await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
     
 
+@Client.on_callback_query()
+async def cb_handler(client, query: CallbackQuery):
+    data = query.data 
+    if data == "start":
+        await query.message.edit_text(
+            text=f""" Hai {query.from_user.mention} \n𝙸'𝚖 𝙰 Powerful 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 & 𝙲𝚞𝚜𝚝𝚘𝚖 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝚂𝚞𝚙𝚙𝚘𝚛𝚝! """,
+            reply_markup=InlineKeyboardMarkup( [[
+                InlineKeyboardButton("𝙳𝙴𝚅𝚂", callback_data='dev')                
+                ],[
+                InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/Apex_legends_AG'),
+                InlineKeyboardButton('🍂 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/Agunivers_backup')
+                ],[
+                InlineKeyboardButton('𝙰𝙱𝙾𝚄𝚃', callback_data='about'),
+                InlineKeyboardButton('𝙷𝙴𝙻𝙿', callback_data='help')
+                ]]
+                )
+            )
 @teletips.on_message(filters.media & filters.private)
 async def get_link_private(client, message):
     try:
