@@ -24,18 +24,11 @@ Valid file types are 'jpeg', 'jpg', 'png', 'mp4' and 'gif'.
 
 To generate links in **group chats**, add me to your supergroup and send the command <code>/tl</code> as a reply to a valid media file.
 
-🏠 | [Home](https://t.me/Apex_legends_AG)
+🏠 | [Home](https://t.me/Apex_legends_AG) 😎 | [Creator](https://agunivers7.github.io/) 
             """
     await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
     
-        text = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
-            ]
-        )
+        
 
 @teletips.on_message(filters.media & filters.private)
 async def get_link_private(client, message):
