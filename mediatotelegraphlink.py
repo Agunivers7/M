@@ -3,7 +3,7 @@ from config import API_ID, API_HASH, BOT_TOKEN
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from telegraph import upload_file
-
+import os
 
 teletips=Client(
     "MediaToTelegraphLink",
