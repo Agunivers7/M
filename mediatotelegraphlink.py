@@ -9,8 +9,8 @@ import os
 
 teletips=Client(
     "MediaToTelegraphLink",
-    api_id = 10651048,
-    api_hash = 37775aca7d11f450ecde375baac17fe7,
+   api_id = int(os.environ["API_ID"]),
+    api_hash = os.environ["API_HASH"],
     bot_token = os.environ["BOT_TOKEN"]
 )
 
